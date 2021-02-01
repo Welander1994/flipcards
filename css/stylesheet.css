@@ -91,10 +91,13 @@ alt efter hvilken vej med vil havde den til at roter*/
     background-color:  rgb(3, 58, 35);
     transform-origin: center bottom;
     transform: rotateX(-90deg);   
+    flex-direction: column-reverse;
 }
 
 .card .back2 h1, .card .back2 p {
-    transform: rotateX(-180deg);
+
+    transform: rotateX(180deg);
+
 }
 /*her slutter styling*/
 
