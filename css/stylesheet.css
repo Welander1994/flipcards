@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(34, 34, 34);
+    color: lightgray;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  
+}
+
+.cardContainer {
+    width: 200px;
+    height: 300px;
+    
+}
+.cardContainer2 {
+    width: 200px;
+    height: 300px;
+    
+}
+.cardContainer3 {
+    width: 200px;
+    height: 300px;
+    
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;    
+}
+
+
+.cardContainer:hover .card {
+    transform: rotateX(180deg);
+}
+
+.cardContainer2:hover .card {
+    transform: rotateY(180deg);
+}
+.cardContainer3:hover .card {
+    transform-origin: center left;
+    transform: rotateY(90deg);
+ 
+}
+
+
+.card figure{
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     margin: 0;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     flex-direction: column;
+}
+
+.card .front {
+    background-color:  rgb(107, 107, 107);
+}
+
+.card .back {
+    background-color:  rgb(59, 59, 59);
+    transform: rotateX(180deg);
+}
+.card .back2 {
+    background-color:  rgb(59, 59, 59);
+    transform: rotateY(180deg);
+}
+.card .back3 {
+    background-color: rgb(59, 59, 59);
+    transform-origin: center right;
+    transform: rotateY(90deg);   
+}
+
+.card .back3 h1 {
+    transform: rotateY(180deg);
+}
+
+.card .back3 p {
+    transform: rotateY(180deg);
+}
+
+
