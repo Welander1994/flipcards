@@ -2,32 +2,29 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(34, 34, 34);
-    color: lightgray;
+    color: rgb(243, 243, 243);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/*placering af mit indhold*/
 .container {
     width: 100%;
     height: 100vh;
     display: flex;
-  
+    justify-content: center;
+    align-items: center;
 }
 
-.cardContainer {
-    width: 200px;
-    height: 300px;
+/*størrelsen af mine kort, transition*/
+.cardContainer, .cardContainer2, .cardContainer3  {
+    width: 300px;
+    height: 400px;
+    transition: transform 1s ease-in-out;
     
-}
-.cardContainer2 {
-    width: 200px;
-    height: 300px;
-    
-}
-.cardContainer3 {
-    width: 200px;
-    height: 300px;
-    
+   
 }
 
+/*selve kortet, husk preserve-3d eller fucker størrelser op*/
 .card {
     width: 100%;
     height: 100%;
@@ -35,56 +32,95 @@ body {
     transform-style: preserve-3d;    
 }
 
-
-.cardContainer:hover .card {
-    transform: rotateX(180deg);
-}
-
-.cardContainer2:hover .card {
-    transform: rotateY(180deg);
-}
-.cardContainer3:hover .card {
-    transform-origin: center left;
-    transform: rotateY(90deg);
- 
-}
-
-
+/*styling på indholdet mine kort*/
 .card figure{
-     width: 100%;
-     height: 100%;
-     position: absolute;
-     margin: 0;
-     display: flex;
-     justify-content: center;
-     text-align: center;
-     flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
-
+/*farven på forsiden af kortet*/
 .card .front {
-    background-color:  rgb(107, 107, 107);
+    background-color:  rgb(5, 71, 44);
 }
 
+/*her starter styling for første kort*/
+.cardContainer:hover .card {
+    transform: rotateY(90deg);
+}
+
+/*sikker at kortet ikke hopper efter man er færdig med at hover. altid 50% af enten højden eller bredden
+alt efter hvilken vej med vil havde den til at roter*/
+.cardContainer:hover  {
+    transition: transform 1s ease-in-out;
+    transform: translateX(-150px); 
+}
+
+/*bestemer hvor og hvordan kortet skal roter*/
 .card .back {
-    background-color:  rgb(59, 59, 59);
-    transform: rotateX(180deg);
-}
-.card .back2 {
-    background-color:  rgb(59, 59, 59);
-    transform: rotateY(180deg);
-}
-.card .back3 {
-    background-color: rgb(59, 59, 59);
+    background-color:  rgb(3, 58, 35);
     transform-origin: center right;
     transform: rotateY(90deg);   
 }
 
-.card .back3 h1 {
+/*roter teksten*/
+.card .back h1, .card .back p {
     transform: rotateY(180deg);
 }
+/*her slutter styling for første kort*/
+/*samme styling princip for koden ende for*/
 
-.card .back3 p {
-    transform: rotateY(180deg);
+
+
+.cardContainer2:hover .card {
+    transform: rotateX(-90deg);
 }
 
+.cardContainer2:hover  {
+    transition: transform 1s ease-in-out;
+    transform: translateY(-200px); 
+}
+
+
+
+.card .back2 {
+    background-color:  rgb(3, 58, 35);
+    transform-origin: center bottom;
+    transform: rotateX(-90deg);   
+}
+
+.card .back2 h1, .card .back2 p {
+    transform: rotateX(-180deg);
+}
+/*her slutter styling*/
+
+
+/*her starter styling*/
+.cardContainer3:hover .card {
+    transform: rotateY(-90deg);
+}
+
+.cardContainer3:hover  {
+    transition: transform 1s ease-in-out;
+    transform: translateX(150px); 
+}
+
+
+.card .front {
+    background-color:  rgb(5, 71, 44);
+}
+
+.card .back3 {
+    background-color:  rgb(3, 58, 35);
+    transform-origin: center left;
+    transform: rotateY(-90deg);   
+}
+
+.card .back3 h1, .card .back3 p {
+    transform: rotateY(180deg);
+}
 
