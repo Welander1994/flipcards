@@ -19,9 +19,7 @@ body {
 .cardContainer, .cardContainer2, .cardContainer3  {
     width: 300px;
     height: 400px;
-    transition: transform 1s ease-in-out;
-    
-   
+    transition: transform 1s ease-in-out;  
 }
 
 /*selve kortet, husk preserve-3d eller fucker størrelser op*/
