@@ -17,12 +17,15 @@ body {
     left: 0;
     top: 0;
     height: 100vh;
-    width: 14vw;
+    width: 15vw;
     background-color: rgb(5, 71, 44);
     transition: all 1s ease-in-out;
     transform-origin: center right;
-
+    transform-style: preserve-3d;
+    box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.5);
 }
+
+
 
 .menu_front {
     display: flex;
@@ -36,10 +39,12 @@ body {
     top: 0;
     height: 100vh;
     width: 15vw;
-    background-color: rgb(5, 71, 44);
+    background-color: rgb(3, 58, 35);
     transform: rotateY(90deg) translateX(-7vw);
     transition: all 1s ease-in-out;
     transform-origin: center left;
+    transform-style: preserve-3d;
+    box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -50,10 +55,17 @@ body {
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
     user-select: none;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+    transform-origin: center left;
 }
+
+
+
+
 
 /*placering af mit indhold*/
 .container {
