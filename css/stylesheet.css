@@ -18,7 +18,7 @@ body {
 /*størrelsen af mine kort, transition*/
 .cardContainer, .cardContainer2, .cardContainer3  {
     width: 300px;
-    height: 400px;
+    height: 300px;
     transition: transform 1s ease-in-out;  
 }
 
@@ -80,7 +80,7 @@ alt efter hvilken vej med vil havde den til at roter*/
 
 .cardContainer2:hover  {
     transition: transform 1s ease-in-out;
-    transform: translateY(-200px); 
+    transform: translateY(-150px); 
 }
 
 
