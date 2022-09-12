@@ -81,13 +81,8 @@ body {
 .cardContainer2,
 .cardContainer3 {
     width: 300px;
-<<<<<<< HEAD
-    height: 300px;
-    transition: transform 1s ease-in-out;  
-=======
     height: 400px;
     transition: transform 1s ease-in-out;
->>>>>>> ab23a9c3cdf95efcbaf7f4ca308e991ecf3c8809
 }
 
 /*selve kortet, husk preserve-3d eller fucker størrelser op*/
@@ -151,11 +146,7 @@ alt efter hvilken vej med vil havde den til at roter*/
 
 .cardContainer2:hover {
     transition: transform 1s ease-in-out;
-<<<<<<< HEAD
-    transform: translateY(-150px); 
-=======
     transform: translateY(-200px);
->>>>>>> ab23a9c3cdf95efcbaf7f4ca308e991ecf3c8809
 }
 
 
